@@ -10,10 +10,7 @@ public class CamelApplication {
         // Create the Camel context with Guice
         InitialContext context = new InitialContext();
 
-        // Loop forever
-        while (true) {
-            // Sleep so we don't kill the CPU
-            Thread.sleep(10000);
-        }
+        // Wait forever
+        Thread.currentThread().join();
     }
 }
