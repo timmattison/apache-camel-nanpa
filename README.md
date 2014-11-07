@@ -20,7 +20,7 @@ INFO: Starting the internal [HTTP/1.1] server on port 8000
 [ttison.CamelApplication.main()] QuartzScheduler                INFO  Scheduler DefaultQuartzScheduler-camel-1_$_NON_CLUSTERED started.
 [ttison.CamelApplication.main()] GuiceCamelContext              INFO  Total 4 routes, of which 4 is started.
 [ttison.CamelApplication.main()] GuiceCamelContext              INFO  Apache Camel 2.14.0 (CamelContext: camel-1) started in 0.528 seconds
-[1) thread #0 - timer://runOnce] route2                         INFO  Update staring
+[1) thread #0 - timer://runOnce] route2                         INFO  Update starting
 [1) thread #0 - timer://runOnce] route2                         INFO  Reading file
 [1) thread #0 - timer://runOnce] route2                         INFO  Unzipping file
 [1) thread #0 - timer://runOnce] route2                         INFO  Processing with Flatpack

@@ -36,7 +36,7 @@ public class ScheduledRoutes extends RouteBuilder {
 
     private void buildRefreshRoute(FlatpackDataFormat flatpackDataFormat, String route) {
         from(route)
-                .log(LoggingLevel.INFO, "Update staring")
+                .log(LoggingLevel.INFO, "Update starting")
                         // Fetch the data from nanpa.com
                 .setBody(constant(httpUri))
                 .log(LoggingLevel.INFO, "Reading file")
