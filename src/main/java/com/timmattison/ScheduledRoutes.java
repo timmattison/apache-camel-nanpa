@@ -49,7 +49,7 @@ public class ScheduledRoutes extends RouteBuilder {
                 .unmarshal(flatpackDataFormat)
                 .log(LoggingLevel.INFO, "Splitting into lines and processing")
                         // Process each line and create a list of NpaNxx objects
-                .split(body()).aggregationStrategyRef(NpaNxxListAggregator.class.getName()).beanRef(NpaNxxRecordProcessor.class.getName()).end()
+                .split(body()).parallelProcessing().aggregationStrategyRef(NpaNxxListAggregator.class.getName()).beanRef(NpaNxxRecordProcessor.class.getName()).end()
                 .log(LoggingLevel.INFO, "Updating cache")
                         // Update the cache
                 .beanRef(NpaNxxProviderUpdater.class.getName())
