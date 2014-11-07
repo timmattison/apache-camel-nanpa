@@ -11,7 +11,7 @@ import org.apache.camel.processor.aggregate.AbstractListAggregationStrategy;
 public class BasicNpaNxxListAggregator extends AbstractListAggregationStrategy<NpaNxx> implements NpaNxxListAggregator {
     @Override
     public NpaNxx getValue(Exchange exchange) {
-        // The value is the in body cast to an NpaNxx object
+        // The value is the in body is cast to an NpaNxx object
         return exchange.getIn().getBody(NpaNxx.class);
     }
 }
