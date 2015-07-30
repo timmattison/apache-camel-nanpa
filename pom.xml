@@ -63,24 +63,11 @@
 
     <build>
         <plugins>
-
             <!-- allows the route to be ran via 'mvn camel:run' -->
             <plugin>
                 <groupId>org.apache.camel</groupId>
                 <artifactId>camel-maven-plugin</artifactId>
                 <version>2.14.0</version>
-            </plugin>
-
-            <!-- From: https://camel.apache.org/guice-maven-plugin.html -->
-            <plugin>
-                <groupId>org.apache.camel</groupId>
-                <artifactId>guice-maven-plugin</artifactId>
-            </plugin>
-
-            <plugin>
-                <groupId>org.apache.camel</groupId>
-                <artifactId>guice-maven-plugin</artifactId>
-                <!-- optional, default value: org.apache.camel.guice.Main -->
             </plugin>
 
             <plugin>
