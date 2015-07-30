@@ -7,7 +7,7 @@ REST interface to get that data in JSON format.
 You can start the routes by simply running:
 
 ```
-mvn exec:java
+mvn clean compile exec:java
 ```
 
 In your console you should see some GuiceCamelContext messages followed by a block of messages like this:
